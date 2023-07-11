@@ -134,7 +134,7 @@ input[type="search"] {
     }
 }
 
-@media (max-width:575px) and (min-width:319px) {
+@media (max-width:575px) and (min-width:300px) {
 
     #grid {
         width: 100%;
@@ -165,9 +165,7 @@ input[type="search"] {
         margin: auto;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
-    .card p{
-       
-    }
+   
 
     .card img {
         width: 100%;
