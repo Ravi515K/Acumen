@@ -22,7 +22,13 @@ const getImages=()=>{
 
 const handleSearch= () =>{
      val= document.querySelector("#search").value;
-    getImages(val)
+     fetch(`https://api.unsplash.com/search/photos/?client_id=${ID}&query=${val}`)
+     .then((res)=>res.json())
+     .then((res)=>{
+      // console.log(res)
+          AppendData(res.results)
+  
+     })
 
 }
 
